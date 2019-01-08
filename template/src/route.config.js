@@ -1,13 +1,8 @@
-import index from './pages/index.vue';
-import test from './pages/test.vue';
+import index from './pages/index/index.vue';
 
 export default [
   {
     path: '/',
     component: index
-  },
-  {
-    path: '/test',
-    component: test
   }
 ]
