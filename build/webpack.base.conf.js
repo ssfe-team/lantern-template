@@ -38,7 +38,7 @@ const baseConfig = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg|ttf)$/,
+        test: /\.(png|jpg|gif|svg|ttf|mp3)$/,
         use: {
           loader: 'file-loader',
           options: {
@@ -52,6 +52,45 @@ const baseConfig = {
           use: 'css-loader',
           fallback: 'style-loader'
         })
+      },
+      {
+        test: /\.eot/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: '[name].[ext]?[hash]',
+              limit: 10000,
+              mimetype: 'application/vnd.ms-fontobject'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.woff(\?\S*)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: '[name].[ext]?[hash]',
+              limit: 10000,
+              mimetype: 'application/font-woff'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.ttf(\?\S*)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: '[name].[ext]?[hash]',
+              limit: 10000,
+              mimetype: 'application/font-ttf'
+            }
+          }
+        ]
       }
     ]
   },
