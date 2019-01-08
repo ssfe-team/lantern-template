@@ -1,3 +1,13 @@
-# lantern-simple-template
+# {{ name }}
 
-lantern 模板
+> {{ description }}
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm run tempinit
+
+# serve with hot reload at localhost:8010
+npm run dev
+```
