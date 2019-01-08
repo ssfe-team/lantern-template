@@ -24,14 +24,13 @@
     "vue-template-compiler": "^2.5.13",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.0",
-    {{#less}}
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
-    {{/less}}
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
-    "lantern-ui": "^0.9.21",
+    "lantern-ui": "^0.10.59",
+    "v-click-outside-x": "^3.6.0",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1"
   }
