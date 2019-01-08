@@ -1,5 +1,7 @@
 # lantern-template
 
+> lantern 模板
+
 ## Usage
 
 This is a project template for [lantern-cli](https://github.com/ssfe-team/lantern-cli).
