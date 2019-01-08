@@ -12,7 +12,6 @@
             <lt-aside width="300px">
               <lt-menu>
                 <lt-menu-item :href="'/'">index</lt-menu-item>
-                <lt-menu-item :href="'/test'">测试</lt-menu-item>
               </lt-menu>
             </lt-aside>
             <lt-main height="100%">
@@ -36,7 +35,7 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="less">
+@import "base/reset.css";
 </style>
-
 
